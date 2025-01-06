@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkslategray;
+  height: 70px;
+  align-items: center;
+  padding: 0 2rem;
+
+  .logo {
+    & p,a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+
+    & li {
+      margin: 0 2rem;
+      a:hover {
+        background-color:  rgb(88, 119, 119);
+        color: red;
+      }
+     
+      & a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px){
+    flex-direction: column;
+    height: auto;
+    padding: 3rem 0; 
+
+    & .menu{
+      margin-top: 2rem;
+      flex-direction: column;
+
+      & li {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+
+.topic{
+  height: 400px;
+  background-image:url("https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  .syntax-topic{
+    & h1{
+      font-size: 70px;
+    }
+  }
+}
+
+
+.syntax-section {
+  color: white;
+  padding: 50px;
+  text-align: center;
+  background-color: darkolivegreen;
+  }
+
+
+.indentation-section{
+  background-color: rgb(189, 199, 205);
+  & h3{
+    padding: 25px;
+  }
+
+  .indentation-class{
+  & p1,p2,p3{
+    padding: 30px;
+  }
+  
+  & h4 {
+    color: red;
+    display: flex;
+    justify-content: center;
+  }
+
+  & a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+}
+}
+
+.variables-section{
+  background-color: rgb(158, 185, 202);
+  & h3{
+    padding: 25px;
+  }
+  
+  .variables-class{
+  & p1{
+    padding: 30px;
+  }
+  
+  & h4 {
+    color: red;
+    display: flex;
+    justify-content: center;
+  }
+
+  & a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+}
+}
+
+
+.comments-section{
+  background-color: rgb(189, 199, 205);
+  & h3{
+    padding: 25px;
+  }
+  
+  .comments-class{
+  & p1{
+    padding: 30px;
+  }
+  
+  & h4 {
+    color: red;
+    display: flex;
+    justify-content: center;
+  }
+
+  & a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+  }
+}
+}
+
+
+.exercise-section{
+  background-color:  rgb(158, 185, 202);
+  & h3{
+    padding: 25px;
+  }
+  
+  .exercise-class{
+  & p1{
+    padding: 30px;
+  }
+  
+  & h4 {
+    color: red;
+    display: flex;
+    justify-content: center;
+  }
+
+  & a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+  }
+}
+}
+
+.internal-link {
+  padding:  20px;
+  text-align: center;
+  background-color: darkolivegreen;
+
+  & a {
+    color: white;
+    text-decoration: none;
+  }
+  }
+
+footer {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: darkslategray;
+
+  & a {
+    color: white;
+    text-decoration: none;
+  }
+}
